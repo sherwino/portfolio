@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { StackFilterPipe } from './stack-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    StackFilterPipe
   ],
   imports: [
     BrowserModule

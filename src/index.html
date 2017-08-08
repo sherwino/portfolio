@@ -1,89 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#2196F3">
-    <title>Sherwin - ng(WebDev)</title>
+    <title>Sherwino - ngDeveloper</title>
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<!-- <script src="js/jquery.lettering.js"></script>
-<script src="js/jquery.textillate.js"></script> -->
-
-    <!-- <script src="js/navicon.js"></script>
-
-	  <script src="js/writer.js"></script> -->
-	  <script>
-
-var j = $.noConflict();
-	  j( document ).ready(function() {
-			j(function () {
-				j('.the').textillate({initialDelay: 900});
-
-				setTimeout(function() {
-				  j(".navicon").fadeIn("slow");
-				  j(".navicon-button").toggleClass("open");
-				}, 4500);
-
-			});
-
-			j(".balloon").click(function() {
-				j(this).animate({width: "10%", height: "0%"}, 60, "linear", function(){
-					j(this).remove();
-				}
-				);
-			});
-		});
-
-	  </script>
-
-
-    <!--  Scripts-->
-    <!-- <script src="min/plugin-min.js"></script>
-    <script src="min/custom-min.js"></script> -->
-
-
-
-    <!-- CSS  -->
-    <!-- <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet">
-    <link href="css/cloudbg.css" type="text/css" rel="stylesheet">
-    <link href="css/clouds.css" type="text/css" rel="stylesheet">
-    <link href="css/paperplanes.css" type="text/css" rel="stylesheet">
-    <link href="css/linkstyles.css" type="text/css" rel="stylesheet" >
-    <link href="css/balloons.css" type="text/css" rel="stylesheet">
-    <link href="css/logo.css" type="text/css" rel="stylesheet">
-    <link href="css/animate.css" type="text/css" rel="stylesheet">
-    <link href="css/logo2.css" type="text/css" rel="stylesheet">
-    <link href="css/navfadein.css" type="text/css" rel="stylesheet">
-    <link href="css/navicon.css" type="text/css" rel="stylesheet"> -->
-
-	<style>
-		.plane{
-			z-index: 10;
-		}
-		#title{
-			z-index:9;
-		}
-		.balloon{
-			z-index:20; /* -1 */
-		}
-		.cloud, .cloudbase{
-			z-index:-2 !important;
-		}
-	</style>
-
-  <title>Portfolio</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!--Scripts  -->
 </head>
 
 <body>
-  <!--Navigation-->
- <div class="navbar-fixed">
+    <header>
+    <!--Navigation-->
+    <div class="navbar-fixed">
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
@@ -125,13 +58,13 @@ var j = $.noConflict();
 
 
                 <ul class="right hide-on-med-and-down">
-                    <li class="fade-in one"><a href="#intro">About</a></li>
-                    <li class="fade-in two"><a href="#work">Work</a></li>
+                    <li class="fade-in one"><a href="#about">About</a></li>
+                    <li class="fade-in two"><a href="#projects">Projects</a></li>
                     <li class="fade-in four"><a href="#contact">Contact</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse navicon-button open fade">
@@ -140,6 +73,7 @@ var j = $.noConflict();
             </div>
         </div>
     </nav>
+    </header>
 </div>
 
   <app-root></app-root>
@@ -167,7 +101,7 @@ var j = $.noConflict();
     </div>
     <div class="footer-copyright default_color">
         <div class="container">
-            &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>thebiscaynebay.com
+            &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>Sherwin Garcia-Obregon
         </div>
     </div>
 </footer>
