@@ -1,4 +1,13 @@
-body,.toggle h3 a,body .ui-widget,table,.bar_graph li span strong,#slide-out-widget-area .tagcloud a,body .container .woocommerce-message a.button,#search-results .result .title span,.woocommerce ul.products li.product h3,.woocommerce-page ul.products li.product h3,.row .col.section-title .nectar-love span,body .nectar-love span,body .nectar-social .nectar-love .nectar-love-count,body .carousel-heading h2,.sharing-default-minimal .nectar-social .social-text,body .sharing-default-minimal .nectar-love {
+.navbar {
+    background: skyblue;
+    
+}
+
+.navbar li {
+    display: inline-flex;
+}
+
+/* body,.toggle h3 a,body .ui-widget,table,.bar_graph li span strong,#slide-out-widget-area .tagcloud a,body .container .woocommerce-message a.button,#search-results .result .title span,.woocommerce ul.products li.product h3,.woocommerce-page ul.products li.product h3,.row .col.section-title .nectar-love span,body .nectar-love span,body .nectar-social .nectar-love .nectar-love-count,body .carousel-heading h2,.sharing-default-minimal .nectar-social .social-text,body .sharing-default-minimal .nectar-love {
  font-family:Open Sans;
  font-size:16px;
  line-height:31px;
@@ -325,4 +334,4 @@ body #slide-out-widget-area .inner .off-canvas-menu-container li a,body #slide-o
 }
 article.post .post-meta .month {
  line-height:-6px!important;
-}
+} */

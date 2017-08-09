@@ -1,11 +1,24 @@
+//Core Dependancies
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
+//App Routing Module
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
+//Components
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { StackFilterPipe } from './stack-filter.pipe';
+
+//Services
+import { AboutService } from "./services/about.service";
+import { ProjectsService } from "./services/projects.service";
+import { ContactService } from "./services/contact.service";
+
+
 
 @NgModule({
   declarations: [
@@ -16,9 +29,17 @@ import { StackFilterPipe } from './stack-filter.pipe';
     StackFilterPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    AboutService, 
+    ProjectsService,
+    ContactService
+  ],
+
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
