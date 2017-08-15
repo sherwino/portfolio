@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 //Components
+import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -20,13 +21,15 @@ import { ContactService } from "./services/contact.service";
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    StackFilterPipe
+    StackFilterPipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule, 
