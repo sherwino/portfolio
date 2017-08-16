@@ -1,7 +1,21 @@
 # Portfolio
-
+Just a little portfolio site for Sherwin Garcia-Obregon, a Full Stack Web Developer.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+I decided to make a portfolio site utilizing Angular2/4 without a MongoDB. The idea is to host
+the site on Github Pages, and create a subdomain (<sherwino.thebiscaynebay.com>) that will redirect to it. 
 
+## Pending ToDo
+- [ ] Format Homepage
+- [ ] Create content in array of objects in .ts file
+- [ ] Format About page
+- [ ] Format Projects page
+- [ ] Add more projects from coursework and from self projects
+- [ ] Format Contact page
+- [ ] Utilize CSS Grid on all pages
+- [x] Add social links
+- [ ] Format Navbar
+
+# Angular CLI Instructions
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
