@@ -18,6 +18,8 @@ import { StackFilterPipe } from './stack-filter.pipe';
 import { AboutService } from "./services/about.service";
 import { ProjectsService } from "./services/projects.service";
 import { ContactService } from "./services/contact.service";
+import { DropdownModule } from 'ngx-dropdown';
+
 
 
 
@@ -34,7 +36,8 @@ import { ContactService } from "./services/contact.service";
   imports: [
     BrowserModule, 
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    DropdownModule
   ],
   providers: [
     AboutService, 
@@ -46,3 +49,4 @@ import { ContactService } from "./services/contact.service";
 })
 
 export class AppModule { }
+// platformBrowserDynamic().bootstrapModule(AppModule);

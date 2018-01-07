@@ -3,12 +3,19 @@
     <!--Navigation-->
         <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
             <div class="container">
-                
-                <ul class="nav nabar-nav">
-                    <li class="nav-item"><a [routerLink]="['/']" class="navbar-brand">{{name}}</a></li>
-                    <li class="nav-item"><a [routerLink]="['/about']" class="nav-link">About</a></li>
-                    <li class="nav-item"><a [routerLink]="['/projects']" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a [routerLink]="['/contact']" class="nav-link">Contact</a></li>
+                    <ul class="navbar">
+                        <div class="dropdown" dropdown>
+                            <li class="nav-item"><a [routerLink]="['/']" class="navbar-brand" dropdown-open>{{name}}</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" (click)="select()">Badman</a></li>
+                                <li class="nav-item"><a [routerLink]="['/about']" class="nav-link">About</a></li>
+                                <li class="nav-item"><a [routerLink]="['/projects']" class="nav-link">Projects</a></li>
+                                <li class="nav-item"><a [routerLink]="['/contact']" class="nav-link">Contact</a></li>
+                                <li><a>Sadman</a></li>
+                                <li><a>Lieman</a></li>
+                            </ul>
+                </div>
+
                 </ul>
             </div>
         </nav>
