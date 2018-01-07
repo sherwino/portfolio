@@ -1,19 +1,23 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  width: 100vw;
 }
 .navbar {
-    width: 100vw;
+    width: 1fr;
     margin: 0;
+    padding-top: 10px;
     top: 0;
     left: 0;
 }
 
 .dropdown {
     margin: 0;
+
 }
 
 .dropdown-menu {
-    background: rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 0.2);
+    width: 90vw;
 }
 
 .navbar a {
@@ -38,7 +42,7 @@ body {
 }
 
 .nav-link {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     
 }
 /* 

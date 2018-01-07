@@ -49,4 +49,3 @@ import { DropdownModule } from 'ngx-dropdown';
 })
 
 export class AppModule { }
-// platformBrowserDynamic().bootstrapModule(AppModule);

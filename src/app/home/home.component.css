@@ -24,7 +24,7 @@
   grid-column: 1;
   grid-row: 2/4;
   display: inline-grid;
-  grid-template-rows: 44px repeat(10, 10vh);
+  grid-template-rows: 142px repeat(10, 10vh);
   grid-template-columns: 50vw 50vw;
 
 }
