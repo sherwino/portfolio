@@ -1,6 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 .navbar {
     width: 1fr;
@@ -51,8 +53,7 @@ body {
 } */
 
 #contact {
-    position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     margin: 0px;
     padding: 20px 0px 50px 0px;
