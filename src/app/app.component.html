@@ -1,18 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
     <header class="container-fluid">
     <!--Navigation-->
-        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-            <div class="container-fluid">
+        <nav class="navbar-fixed-top navbar-dark bg-inverse">
+            <div class="">
                     <ul class="navbar">
                         <div class="dropdown" dropdown>
-                            <li class="nav-item"><a [routerLink]="['/']" class="navbar-brand" dropdown-open>{{name}}</a></li>
+                            <li class="flex-left"><a [routerLink]="['/']" class="navbar-brand" dropdown-open>{{name}}</a></li>
+                                <li class="header-icon flex-right"><a href="mailto:sherwination&#64;gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                <li class="header-icon flex-right"><a href="https://github.com/sherwino" target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li class="header-icon flex-right"><a href="https://fb.me/sherwination" target="blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="header-icon flex-right"><a href="https://twitter.com/sherwination" target="blank"><i class="fa fa-twitter"></i></a></li>    
+
+                            
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a [routerLink]="['/about']" class="nav-link">About</a></li>
                                 <li class="nav-item"><a [routerLink]="['/projects']" class="nav-link">Projects</a></li>
                                 <li class="nav-item"><a [routerLink]="['/contact']" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
-
                     </ul>
             </div>
         </nav>

@@ -1,12 +1,9 @@
-/*GENERAL CSS*/
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
 .page-grid {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-rows: 100vw 100vw;
-  grid-template-columns: 100vw;
+  grid-template-rows: 98vw 98vw;
+  grid-template-columns: 100%;
   background: yellow;
 }
 
@@ -15,16 +12,18 @@
   height: 100%;
   grid-row-start: 1;
   grid-column-start: 1;
-  background: green;
+  background: #021420;
 }
 
 .big-img {
-  width: 100vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100vh;
   grid-column: 1;
   grid-row: 2/4;
   display: inline-grid;
-  grid-template-rows: 142px repeat(10, 10vh);
+  grid-template-rows: 62px repeat(10, 1fr);
   grid-template-columns: 50vw 50vw;
   overflow: hidden;
 
@@ -49,7 +48,7 @@
   grid-column: 1;
   grid-row: 2;
   text-align: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   font-size: 2.5vw;
 }
 
