@@ -9,38 +9,37 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 //Components
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
+import { FormsComponent } from './forms/forms.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { StackFilterPipe } from './stack-filter.pipe';
 
 //Services
-import { AboutService } from "./services/about.service";
+import { FormsService } from "./services/forms.service";
 import { ProjectsService } from "./services/projects.service";
 import { ContactService } from "./services/contact.service";
 import { DropdownModule } from 'ngx-dropdown';
-
-
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     ProjectsComponent,
     ContactComponent,
     StackFilterPipe,
-    HomeComponent
+    HomeComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
     HttpModule,
-    DropdownModule
+    DropdownModule,
+    RouterModule
   ],
   providers: [
-    AboutService, 
+    FormsService,
     ProjectsService,
     ContactService
   ],

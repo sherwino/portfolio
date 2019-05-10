@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { DropdownModule } from "ngx-dropdown";
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',

@@ -7,7 +7,7 @@ the site on Github Pages, and create a subdomain (<sherwino.thebiscaynebay.com>)
 ## Pending ToDo
 - [ ] Format Homepage
 - [ ] Create content in array of objects in .ts file
-- [ ] Format About page
+- [ ] Format Form page
 - [ ] Format Projects page
 - [ ] Add more projects from coursework and from self projects
 - [ ] Format Contact page

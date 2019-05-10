@@ -4,8 +4,8 @@
   <div class="big-img">
       <video class="big-vid" autoplay muted loop="true">
           <source
-            src="../../assets/vblur.webm"
-            type="video/webm">
+          src="https://i.imgur.com/513U0ok.mp4"
+          type="video/mp4">
           Your browser doesn't support HTML5 video tag.
         </video>
     <div class="big-overlay"></div>
@@ -15,26 +15,28 @@
       MEAN stack web developer extrordinaire from South Florida.
       That doesn't like to make profile pages for himself.
       Maybe he just doesn't like a whole page dedicated to him.
-      Oooooh maybe we could make the page about something else at the same time.
+      Oooooh maybe we could make the page form something else at the same time.
     </p>
   </div>
 
 </section>
+<section class='underwater'>
+  <p>
+    The Home Component should be a really long page.
+  </p>
+  
+  <div *ngFor="let string of strings">
+    <p> {{ string }} </p>
+    <br>
+  </div>
 
-<p>
-  The Home Component should be a really long page.
-</p>
-
-<div *ngFor="let string of strings">
-  <p> {{ string }} </p>
-  <br>
-</div>
+</section>
 
 <!-- End of home component grid -->
 </div>
-<!--
+
 <div>
-  <app-about></app-about>
+  <app-forms></app-forms>
 </div>
 
 <div>
@@ -43,4 +45,4 @@
 
 <div>
   <app-contact></app-contact>
-</div> -->
+</div>
