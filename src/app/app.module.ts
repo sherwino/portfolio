@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 //App Routing Module
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
+//Material Modules
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 //Components
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
@@ -29,7 +32,8 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     StackFilterPipe,
     HomeComponent,
-    FormsComponent
+    FormsComponent,
+    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule, 
