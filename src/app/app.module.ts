@@ -33,14 +33,14 @@ import { RouterModule } from '@angular/router';
     StackFilterPipe,
     HomeComponent,
     FormsComponent,
-    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
     HttpModule,
     DropdownModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [
     FormsService,

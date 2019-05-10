@@ -1,3 +1,8 @@
-<p>
-  forms works!
-</p>
+
+<form [formGroup]='test_group' #userForm='ngForm'>
+    <mat-form-field>
+        <label for="name">Poop</label>
+        <input  matInput placeholder="Name" formControlName="name" type="text" name="name">
+
+    </mat-form-field>
+</form>

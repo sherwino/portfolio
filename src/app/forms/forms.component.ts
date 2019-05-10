@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroupDirective } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent implements OnInit {
+  // @ViewChild('userForm') userForm: FormGroupDirective
+  // ^ Not sure what that does
 
   constructor() { }
 
