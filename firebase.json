@@ -1,9 +1,7 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
+  "rulesFile": "database.rules.json",
   "hosting": {
-    "public": "dist",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
