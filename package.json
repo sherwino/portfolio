@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx babel src --watch --out-file ./public/scripts/index.js --source-maps"
+    "dev": "npx babel src --watch --out-file ./public/scripts/index.js --source-maps",
+    "build": "npx babel src --out-file ./public/scripts/index.js --source-maps --presets minify"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/sherwino/portfolio#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10"
+    "@babel/core": "^7.12.10",
+    "babel-preset-minify": "^0.5.1"
   }
 }

@@ -39,6 +39,7 @@ body {
 }
 
 #main {
+  min-height: 200vh;
   background: linear-gradient(
     146deg,
     rgba(151, 161, 161, 0.3) 5%,
