@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+#profile-image {
+  background: #fff;
+  width: 360px;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item {
+  margin: 0 0.5rem;
+}
+
+#name {
+  font-size: 2.5rem;
+  line-height: 20px;
+  text-align: center;
+}
+
+#main {
+  background: linear-gradient(
+    146deg,
+    rgba(151, 161, 161, 0.3) 5%,
+    rgba(6, 11, 28, 0.55) 60%,
+    rgba(0, 0, 0, 0.69) 95%
+  );
+}
+
+.floating-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.floating-section * {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.section-message,
+.welcome-message {
+  max-width: 850px;
+}
+
+.section-title,
+#site {
+  font-size: 1.5rem;
+  max-width: 75vw;
+}
+
+.section-list {
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .section-title,
+  #site {
+    max-width: 85vw;
+  }
+
+  .section-message,
+  .welcome-message {
+    max-width: 75vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #name {
+    font-size: 2rem;
+  }
+  .section-title,
+  #site {
+    max-width: 90vw;
+    font-size: 1.2rem;
+  }
+}

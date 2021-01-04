@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "order": 0,
+      "featured": true,
+      "title": "MY Experiences",
+      "message": "I have learned from my experiences",
+      "list": ["Job 1", "Job 2", "Job 3"]
+    },
+    {
+      "order": 1,
+      "featured": true,
+      "title": "MY Languages",
+      "message": "I have learned from my experiences",
+      "list": ["TypeScript", "JavaScript", "PHP"]
+    },
+    {
+      "order": 2,
+      "featured": true,
+      "title": "MY Libraries",
+      "message": "I have learned from my experiences",
+      "list": ["React", "React Native", "Angular"]
+    }
+  ]
+}

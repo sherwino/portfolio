@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && cp -a ./src/lib/ ./public/scripts"
+    "dev": "npx babel src --watch --out-file ./public/scripts/index.js --source-maps"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/sherwino/portfolio/issues"
   },
-  "homepage": "https://github.com/sherwino/portfolio#readme"
+  "homepage": "https://github.com/sherwino/portfolio#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10"
+  }
 }
