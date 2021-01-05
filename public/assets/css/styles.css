@@ -67,8 +67,8 @@ body {
 .floating-section * {
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.6;
   transition: all 0.1s;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -113,7 +113,6 @@ body {
   }
   .section-message,
   .section-list {
-    font-size: 1.1rem;
     max-width: 88vw;
   }
   .section-title,

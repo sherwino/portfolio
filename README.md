@@ -24,3 +24,4 @@ Wishlist:
 - [ ] Maybe I shouldn't use VW for sizing because fonts jumping and moving around is not a good look, maybe snapping is better.
 - [ ] Create a print / download resume button using extended data from firebase
 - [ ] Try building some of the tools in webassembly, cause why not
+- [ ] Analytics would be nice, either google analytics, or something of the sort to know who is looking for me.
