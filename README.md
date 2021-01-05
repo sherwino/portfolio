@@ -1,43 +1,26 @@
-# Portfolio
-Just a little portfolio site for Sherwin Garcia-Obregon, a Full Stack Web Developer.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
-I decided to make a portfolio site utilizing Angular2/4 without a MongoDB. The idea is to host
-the site on Github Pages, and create a subdomain (<sherwino.thebiscaynebay.com>) that will redirect to it. 
+## sherwino.co
 
-## Pending ToDo
-- [ ] Format Homepage
-- [ ] Create content in array of objects in .ts file
-- [ ] Format Form page
-- [ ] Format Projects page
-- [ ] Add more projects from coursework and from self projects
-- [ ] Format Contact page
-- [ ] Utilize CSS Grid on all pages
-- [x] Add social links
-- [ ] Format Navbar
+A little portfolio site built using vanilla js, basic html, and css.
+Some of the data is coming from a Firebase Realtime DB, and the static assets are hosted on using Firebase Hosting.
 
-# Angular CLI Instructions
-## Development server
+Wanted to use some experimental syntax like optional chaining so I had to integrate Babel to transpile all of the code in the `src` folder to minified browser compliant code.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I do enjoy the simplicity of the site as is but I do have a wishlist of things that I would like to add, basically an excuse to practice some principals I haven't been able to use or apply in quite sometime.
 
-## Code scaffolding
+Wishlist:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# portfolio
+- [ ] Get a perfect score with lighthouse, not far from this but hopefully using firebase and google fonts doesn't get in the way of this perfect score.
+- [ ] Finish making site into a true PWA, let user know when there are updates to the site.
+- [ ] Chat integration, use the same one from react taskbar
+- [ ] Use AVIF, right now I am using webp, webm, and svgs but lets see if we could optimize by using AVIF.
+- [ ] Use gif in platforms that do not support webm.
+- [ ] Improve accessibility
+- [ ] Use localization, and present the information in Spanish, Portuguese, and French.
+- [ ] Use UserAgent info to present feedback to the user based off of the browser and more.
+- [ ] Create tools.sherwino.co subdomain, and build a suite of tools that I really would like to build out. That deserves a whole markdown file of its own.
+- [ ] Use CSS variables, so that I could properly theme throughout the site and its subdomains
+- [ ] Create a react, vue, angular, mthrill, svelte version of the site with subdomains, maybe let the user select this in the footer.
+- [ ] Add filtering, so that when a user clicks on a language or tech the projects we highlight projects that are related to that tech.
+- [ ] Maybe I shouldn't use VW for sizing because fonts jumping and moving around is not a good look, maybe snapping is better.
+- [ ] Create a print / download resume button using extended data from firebase
+- [ ] Try building some of the tools in webassembly, cause why not
