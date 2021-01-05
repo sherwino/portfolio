@@ -9,6 +9,7 @@ I do enjoy the simplicity of the site as is but I do have a wishlist of things t
 
 Wishlist:
 
+- [ ] Use image block with src set for browser that don't support these formats
 - [ ] Get a perfect score with lighthouse, not far from this but hopefully using firebase and google fonts doesn't get in the way of this perfect score.
 - [ ] Finish making site into a true PWA, let user know when there are updates to the site.
 - [ ] Chat integration, use the same one from react taskbar
