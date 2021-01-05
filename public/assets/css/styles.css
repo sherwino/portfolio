@@ -52,9 +52,9 @@ body {
   min-height: 200vh;
   background: linear-gradient(
     146deg,
-    rgba(151, 161, 161, 0.3) 5%,
-    rgba(6, 11, 28, 0.55) 60%,
-    rgba(0, 0, 0, 0.69) 95%
+    rgba(151, 161, 161, 0.35) 5%,
+    rgba(6, 11, 28, 0.6) 60%,
+    rgba(0, 0, 0, 0.74) 95%
   );
 }
 
@@ -68,7 +68,10 @@ body {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  transition: all 0.5s ease;
+  line-height: 1.5;
+  transition: all 0.1s;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .section-message,
@@ -97,15 +100,30 @@ body {
   .welcome-message {
     max-width: 75vw;
   }
+
+  #profile-image {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   #name {
     font-size: 2rem;
   }
+  .section-message,
+  .section-list {
+    font-size: 1.1rem;
+    max-width: 88vw;
+  }
   .section-title,
   #site {
     max-width: 90vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  #profile-image {
+    width: 280px;
+    height: 280px;
   }
 }

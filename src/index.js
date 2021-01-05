@@ -6,12 +6,6 @@ const renderSections = (sections) => {
   });
 };
 
-// const renderLists = (...lists) => {
-//   for (let i = 0; i < lists.length; i++) {
-//     CreateList(lists[i]);
-//   }
-// };
-
 getHomeData.then((snapshot) => {
   const data = snapshot?.val();
 
@@ -19,8 +13,4 @@ getHomeData.then((snapshot) => {
     const sortedSections = data.sections.sort((a, b) => a?.order > b?.order);
     renderSections(sortedSections);
   }
-
-  // if (data.lists) {
-  //   renderLists(data.lists);
-  // }
 });
