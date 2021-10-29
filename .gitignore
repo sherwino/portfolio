@@ -43,3 +43,4 @@ Thumbs.db
 
 # Transpiled Files
 src/lib
+firebase-debug.log
