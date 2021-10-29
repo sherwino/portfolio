@@ -22,13 +22,12 @@
   },
   "homepage": "https://github.com/sherwino/portfolio#readme",
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
-    "@babel/preset-env": "^7.12.11",
-    "babel-preset-minify": "^0.5.1"
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/plugin-proposal-optional-chaining": "*",
+    "@babel/polyfill": "*",
+    "@babel/preset-env": "*",
+    "babel-preset-minify": "*"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1"
-  }
+  "dependencies": {}
 }
