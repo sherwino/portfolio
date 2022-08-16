@@ -5,11 +5,12 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently npm:watch \"serve ./public\" --kill-others",
+    "dev": "concurrently npm:watch npm:serve --kill-others",
     "build": "webpack --mode=production --node-env=production",
+    "serve": "serve ./public",
+    "predeploy": "npm run build",
     "deploy": "firebase deploy",
     "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch"
   },
   "repository": {
