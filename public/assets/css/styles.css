@@ -84,8 +84,6 @@ body {
   color: #eee;
 }
 
-
-
 .floating-section {
   display: flex;
   align-items: center;
@@ -116,7 +114,16 @@ body {
 
 .section-list {
   text-align: justify;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(80px, 1fr));
+}
 
+.section-item {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin: 5px;
+  padding: 10px 5px;
+  text-align: center;
 }
 
 /* Media Queries */

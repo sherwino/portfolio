@@ -1,11 +1,12 @@
 export const DATA = {
     sections: [
         {
-            "featured": "featured",
+            "featured": "true",
             "id": "technology-intro",
-            "message": "Been a developer for a few years now, and have been fortunate enough to work with some of the most widely adopted technologies in the world. My code is running on all types of devices, and has been seen by thousands of users. I understand that saying that I am a full stack developer does not give a full picture of what I have been working with so below are some of the technologies I work with the most professionally:",
+            "class": "section-intro",
+            "message": "Been a developer for a few years now, and have been fortunate enough to work with some of the most widely adopted technologies in the world. My code is running on all types of devices, and it has rendered on the screen of thousands of users. I understand that saying that I am a software developer does not give a full picture of what I have been working with so below are some of the technologies I work with the most professionally:",
             "order": 0,
-            "title": "What technologies am I developing in?"
+            "title": "What technologies do I work with?"
         },
         {
             "featured": true,
@@ -20,9 +21,10 @@ export const DATA = {
                 "Tizen",
                 "Web"
             ],
-            "message": "One of the technologies I am spending the most time with these days is React Native. React Native is an impressive framework that lets you use languages like JavaScript, TypeScript, Kotlin, Swift, and couples them with React so that you could render web like apps on native platforms. The last few years has been all about working on codebases that leverage the strengths of React Native. Like creating apps that can take React Native and scale it across multiple platforms. The versatility of this framework has given me the opportunity to develop on the systems or platforms like:",
+            "message": "One of the technologies I am spending the most time with these days is React Native. React Native is an impressive framework that lets you use languages like JavaScript, TypeScript, Kotlin, Swift, and couples them with React so that you could render web like apps on native platforms. The last few years has been all about working on codebases that leverage the strengths of React Native. Like creating apps that can take React Native and scale it across multiple platforms. The versatility of this framework has given me the opportunity to develop on systems or platforms like:",
             "order": 1,
-            "title": "React Native"
+            "title": "React Native",
+            "logo": "./assets/react-icon.svg"
         },
         {
             "featured": true,
