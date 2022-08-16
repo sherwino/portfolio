@@ -8,7 +8,7 @@
     "dev": "concurrently npm:watch npm:serve --kill-others",
     "build": "webpack --mode=production --node-env=production",
     "serve": "serve ./public",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && git add . && git commit -m chore:production-build",
     "deploy": "firebase deploy",
     "build:dev": "webpack --mode=development",
     "watch": "webpack --watch"
