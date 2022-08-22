@@ -17,6 +17,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "templates/index.html"),
+      title: "Sherwin: Developer",
     }),
 
     new MiniCssExtractPlugin(),
@@ -27,10 +28,20 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/i,
-        loader: "ts-loader",
-        exclude: ["/node_modules/"],
+        test: /\.(js|jsx|ts|tsx)$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
+        options: { presets: ["@babel/env"] },
       },
+      // {
+      //   test: /\.css$/,
+      //   use: ["style-loader", "css-loader"],
+      // },
+      // {
+      //   test: /\.(ts|tsx)$/i,
+      //   loader: "ts-loader",
+      //   exclude: ["/node_modules/"],
+      // },
       {
         test: /\.css$/i,
         use: [stylesHandler, "css-loader"],
@@ -56,6 +67,21 @@ module.exports = () => {
     config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
   } else {
     config.mode = "development";
+    config.devtool = "inline-source-map";
+    config.devServer = {
+      static: path.resolve(__dirname, "public"),
+      port: 3000,
+    };
+    config.plugins = [
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, "templates/index.html"),
+        title: "Sherwin in Dev Mode",
+      }),
+
+      new MiniCssExtractPlugin(),
+      // Add your plugins here
+      // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+    ];
   }
   return config;
 };
