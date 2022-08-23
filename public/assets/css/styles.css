@@ -68,6 +68,11 @@ body {
 
 .social-item {
   margin: 0 0.5rem;
+  opacity: 0.8;
+}
+
+.social-item:hover {
+  opacity: 1;
 }
 
 #name {
@@ -197,8 +202,17 @@ body {
   flex-direction: column;
 }
 
-.toggle-switches > label {
-  width: 40px;
+.checkbox {
+  margin: 1px;
+}
+
+.checkbox:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.checkbox:hover,
+.radio-item:hover {
+  background: rgba(3, 113, 248, 0.2);
 }
 
 /* Modal */
@@ -282,22 +296,43 @@ a.modal-open {
 }
 
 .modal-area input[type="radio"] {
-  display: none;
+  /* display: none; */
 }
+
 .modal-area label {
-  float: left;
-  display: block;
-  padding: 10px 20px;
-  font-weight: 700;
+  /* float: left; */
+  /* display: block; */
+  /* padding: 10px 20px; */
+  /* font-weight: 700; */
   cursor: pointer;
-  z-index: +2;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
+  /* z-index: +2; */
+  /* color: #fff; */
   transition: all 0.4s ease-in-out;
 }
-.modal-area input[type="radio"]:checked + label {
-  background: #fff;
-  color: #424242;
+
+.modal-area label:nth-of-type(2) {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.radio-switches legend {
+  position: relative;
+}
+
+.detail {
+  opacity: 0;
+  width: 175px;
+  position: absolute;
+  top: 25px;
+  left: 180px;
+  padding: 5px;
+  background: rgba(219, 44, 44, 0.113);
+  transition: all 0.5s ease-in-out;
+}
+
+.radio-checked {
+  color: green;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Media Queries */

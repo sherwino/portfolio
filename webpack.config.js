@@ -10,7 +10,7 @@ const isProduction = process.env.NODE_ENV === "production";
 const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
-  entry: "./src/index.ts",
+  entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "public"),
   },
@@ -28,7 +28,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
         options: { presets: ["@babel/env"] },
@@ -37,11 +37,11 @@ const config = {
       //   test: /\.css$/,
       //   use: ["style-loader", "css-loader"],
       // },
-      // {
-      //   test: /\.(ts|tsx)$/i,
-      //   loader: "ts-loader",
-      //   exclude: ["/node_modules/"],
-      // },
+      {
+        test: /\.(ts|tsx)$/i,
+        loader: "ts-loader",
+        exclude: ["/node_modules/"],
+      },
       {
         test: /\.css$/i,
         use: [stylesHandler, "css-loader"],

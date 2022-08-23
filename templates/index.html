@@ -200,7 +200,7 @@
           </a>
         </div>
       </section>
-      <section class="section-modal">
+      <section class="section-modal" tabindex="-1">
         <div class="modal" id="modal">
           <div class="modal-content">
             <a href="#" class="modal-close" title="Close Modal">X</a>
@@ -213,46 +213,92 @@
                 <legend>
                   Need help reading the content on this page?
                 </legend>
-
-                <input
-                  type="checkbox"
-                  id="tooltip-switch"
-                  name="tooltip-switch"
-                />
-                <label class="checkboxes" for="tooltip-switch">
-                  Enable Tooltip
-                </label>
-                <input
-                  type="checkbox"
-                  id="tooltip-switch"
-                  name="tooltip-switch"
-                />
-                <label class="checkboxes" for="tooltip-switch">
-                  Enable Light Mode
-                </label>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="tooltip-switch"
+                    name="tooltip-switch"
+                  />
+                  <label class="checkboxes" for="tooltip-switch">
+                    Tooltips
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="tooltip-switch"
+                    name="tooltip-switch"
+                  />
+                  <label for="tooltip-switch">
+                    Light Mode
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="tooltip-switch"
+                    name="tooltip-switch"
+                  />
+                  <label for="tooltip-switch">
+                    High Contrast Mode
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="tooltip-switch"
+                    name="tooltip-switch"
+                  />
+                  <label for="tooltip-switch">
+                    Print Mode
+                  </label>
+                </div>
               </fieldset>
               <fieldset class="radio-switches">
-                <legend>Select a maintenance drone:</legend>
+                <legend id="lang-legend">
+                  Select preffered language:
+                  <i class="detail"
+                    >Is <b id="preferred-lang"></b> your preferred language?</i
+                  >
+                </legend>
 
-                <div>
+                <div class="radio-item">
                   <input
                     type="radio"
-                    id="huey"
-                    name="drone"
-                    value="huey"
-                    checked
+                    id="English"
+                    name="language"
+                    value="English"
                   />
-                  <label for="huey">Huey</label>
+                  <label for="English">🇬🇧 English</label>
                 </div>
 
-                <div>
-                  <input type="radio" id="dewey" name="drone" value="dewey" />
-                  <label for="dewey">Dewey</label>
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="Spanish"
+                    name="language"
+                    value="Spanish"
+                  />
+                  <label for="Spanish">🇪🇸 Spanish</label>
                 </div>
 
-                <div>
-                  <input type="radio" id="louie" name="drone" value="louie" />
-                  <label for="louie">Louie</label>
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="French"
+                    name="language"
+                    value="French"
+                  />
+                  <label for="French">🇫🇷 French</label>
+                </div>
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="Portuguese"
+                    name="language"
+                    value="Portuguese"
+                  />
+                  <label for="Portuguese">🇵🇹 Portuguese</label>
                 </div>
               </fieldset>
 
@@ -265,24 +311,25 @@
                 and css, transpiled with webpack so that I could write
                 everything in TypeScript
               </p>
-              <label for="tool-select"
-                >Select the Library or Framework that will be used to render
-                this site:</label
-              >
+              <fieldset for="tool-select">
+                <legend>
+                  Select what will be used to render this site:
+                </legend>
 
-              <select name="tools" id="tool-select">
-                <option value="">--Please choose an option--</option>
-                <option value="vanillajs">VanillaJS</option>
-                <option value="vuejs">VueJS</option>
-                <option value="reactjs">ReactJS</option>
-                <option value="angular">Angular</option>
-                <option value="handlebars">Handlebars</option>
-                <option value="next">Next</option>
-                <option value="remix">Remix</option>
-                <option value="svelte">Svelte</option>
-                <option value="mithrill">Mithrill</option>
-                <option value="erb">ERB</option>
-              </select>
+                <select name="tools" id="tool-select">
+                  <option value="">Choose a library or framework-</option>
+                  <option value="vanillajs">VanillaJS</option>
+                  <option value="vuejs">VueJS</option>
+                  <option value="reactjs">ReactJS</option>
+                  <option value="angular">Angular</option>
+                  <option value="handlebars">Handlebars</option>
+                  <option value="next">Next</option>
+                  <option value="remix">Remix</option>
+                  <option value="svelte">Svelte</option>
+                  <option value="mithrill">Mithrill</option>
+                  <option value="erb">ERB</option>
+                </select>
+              </fieldset>
             </div>
           </div>
         </div>
