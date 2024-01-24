@@ -164,3 +164,36 @@ body {
     height: 280px;
   }
 }
+
+/* Style for the container */
+.link-list {
+  color: black;
+  list-style-type: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Aligns items vertically */
+  gap: 10px; /* Space between items */
+}
+
+.link-list a {
+  color: black;
+}
+
+/* Style for each item */
+.link-item {
+  background-color: #ffffff; /* High contrast color */
+  color: #000000;
+  padding: 15px 20px; /* Padding inside each item */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  text-align: center; /* Centering the text */
+  font-size: 1rem; /* Font size */
+}
+
+/* Hover effect */
+.link-item:hover {
+  transform: translateY(-5px); /* Slight move upwards */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
